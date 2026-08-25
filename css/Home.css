@@ -7,9 +7,11 @@
 li {
     list-style: none;
 }
+
 .box {
     display: none;
 }
+
 p,
 h1,
 h2,
@@ -19,7 +21,9 @@ h5,
 h6 {
     margin: 0;
 }
-
+.img-food {
+    height: 150px;
+}
 ul {
     padding: 0;
     margin: 0;
@@ -185,12 +189,50 @@ img {
     }
 }
 
+.adf {
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    gap: 8px;
+
+    .box-img {
+        width: 50%;
+        margin: auto;
+    }
+
+    h3 {
+        background-color: red;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+        left: 7px;
+        color: whitesmoke;
+        font-size: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    input {
+        width: 40px;
+        text-align: center;
+    }
+}
+
 @media screen and (min-width: 990px) {
     .admin {
         display: flex;
 
         nav {
             height: 100vh;
+        }
+        section {
+            height: calc(100vh - 70px);
+            overflow: auto;
         }
     }
 }
@@ -204,8 +246,9 @@ img {
                     right: 0;
                 }
             }
+
             .menu-show {
-                display:none;
+                display: none;
             }
         }
     }
