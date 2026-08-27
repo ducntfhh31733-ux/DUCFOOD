@@ -14,5 +14,11 @@ list_li.forEach((x, index) => {
     x.addEventListener("click", () => {
         list_box.forEach(p => p.style.display = "none")
         list_box[index].style.display = "block";
+        localStorage.setItem("index",index);
     })
 });
+
+const index = localStorage.getItem("index");
+if(index){
+     list_box[index].style.display = "block";
+}

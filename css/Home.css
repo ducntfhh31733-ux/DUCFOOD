@@ -21,9 +21,11 @@ h5,
 h6 {
     margin: 0;
 }
+
 .img-food {
     height: 150px;
 }
+
 ul {
     padding: 0;
     margin: 0;
@@ -32,6 +34,18 @@ ul {
 img {
     width: 100%;
     height: 100%;
+}
+
+.idbooking {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .admin {
@@ -223,6 +237,15 @@ img {
     }
 }
 
+.h {
+    position: relative;
+}
+
+.k {
+    position: absolute;
+    left: 700px;
+}
+
 @media screen and (min-width: 990px) {
     .admin {
         display: flex;
@@ -230,6 +253,7 @@ img {
         nav {
             height: 100vh;
         }
+
         section {
             height: calc(100vh - 70px);
             overflow: auto;

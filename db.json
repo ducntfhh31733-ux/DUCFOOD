@@ -1,150 +1,151 @@
 {
-    "tables" : [
+  "tables": [
     {
-        "id" : 1,
-        "customerName" : "",
-        "quantity" : "",
-        "status": true
+      "id": "1",
+      "customerName": "",
+      "quantity": "",
+      "status": false
     },
-      {
-        "id" : 2,
-        "customerName" : "",
-        "quantity" : "",
-        "status": true
+    {
+      "id": "2",
+      "customerName": "",
+      "quantity": "",
+      "status": false
     },
-      {
-        "id" : 3,
-        "customerName" : "",
-        "quantity" : "",
-        "status": true
+    {
+      "id": "3",
+      "customerName": "",
+      "quantity": "",
+      "status": false
     },
-      {
-        "id" : 4,
-        "customerName" : "",
-        "quantity" : "",
-        "status": true
+    {
+      "id": "4",
+      "customerName": "hrrrll",
+      "quantity": "1000",
+      "status": false
     },
-      {
-        "id" : 5,
-        "customerName" : "",
-        "quantity" : "",
-        "status": true
+    {
+      "id": "5",
+      "customerName": "",
+      "quantity": "",
+      "status": false
     },
-      {
-        "id" : 6,
-        "customerName" : "",
-        "quantity" : "",
-        "status": true
+    {
+      "id": "6",
+      "customerName": "",
+      "quantity": "",
+      "status": true
     },
-      {
-        "id" : 7,
-        "customerName" : "",
-        "quantity" : "",
-        "status": true
+    {
+      "id": "7",
+      "customerName": "",
+      "quantity": "",
+      "status": true
     },
-      {
-        "id" : 8,
-        "customerName" : "",
-        "quantity" : "",
-        "status": true
+    {
+      "id": "8",
+      "customerName": "",
+      "quantity": "",
+      "status": true
     },
-      {
-        "id" : 9,
-        "customerName" : "",
-        "quantity" : "",
-        "status": true
+    {
+      "id": "9",
+      "customerName": "",
+      "quantity": "",
+      "status": true
     },
-      {
-        "id" : 10,
-        "customerName" : "",
-        "quantity" : "",
-        "status": true
+    {
+      "id": "10",
+      "customerName": "",
+      "quantity": "",
+      "status": true
     },
-      {
-        "id" : 11,
-        "customerName" : "",
-        "quantity" : "",
-        "status": true
+    {
+      "id": "11",
+      "customerName": "",
+      "quantity": "",
+      "status": true
     },
-      {
-        "id" : 12,
-        "customerName" : "",
-        "quantity" : "",
-        "status": true
+    {
+      "id": "12",
+      "customerName": "",
+      "quantity": "",
+      "status": true
     }
-    ],
-    "food" : [
-        {
-            "id": 1,
-            "name": "Gà Giòn Vui Vẻ",
-            "imgUrl": "../img/garan.webp",
-            "price": 33000
-        },
-         {
-            "id": 2,
-            "name": "Gà Sốt Cay",
-            "imgUrl": "../img/garncay.png",
-            "price": 35000
-        },
-         {
-            "id": 3,
-            "name": "Mì Ý Jolly Spaghetti",
-            "imgUrl": "../img/miy.png",
-            "price": 45000
-        },
-         {
-            "id": 4,
-            "name": "Cơm Gà Giòn Vui Vẻ",
-            "imgUrl": "../img/com.png",
-            "price": 48000
-        },
-         {
-            "id": 5,
-            "name": "Burger Tôm",
-            "imgUrl": "../img/burrer.png",
-            "price": 40000
-        },
-         {
-            "id": 6,
-            "name": "Sandwich Gà Giòn",
-            "imgUrl": "../img/sawit.png",
-            "price": 30000
-        },
-         {
-            "id": 7,
-            "name": "Khoai Tây Chiên",
-            "imgUrl": "../img/tay.png",
-            "price": 25000
-        },
-         {
-            "id": 8,
-            "name": "Súp Bí Đỏ",
-            "imgUrl": "../img/sup.png",
-            "price": 15000
-        },
-         {
-            "id": 9,
-            "name": "Bánh Pie Nhân Xoài Đào",
-            "imgUrl": "../img/pie.png",
-            "price": 15000
-        },
-         {
-            "id": 10,
-            "name": "Kem Sundae",
-            "imgUrl": "../img/kem.png",
-            "price": 15000
-        },
-         {
-            "id": 11,
-            "name": "Kem Sữa Tươi Ốc Quế",
-            "imgUrl": "../img/kemoc.png",
-            "price": 5000
-        },
-         {
-            "id": 12,
-            "name": "Nước Ngọt Pepsi / 7Up",
-            "imgUrl": "../img/7up.png",
-            "price": 15000
-        }
-    ]
+  ],
+  "food": [
+    {
+      "id": "1",
+      "name": "Gà Giòn Vui Vẻ",
+      "imgUrl": "../img/garan.webp",
+      "price": 33000
+    },
+    {
+      "id": "2",
+      "name": "Gà Sốt Cay",
+      "imgUrl": "../img/garncay.png",
+      "price": 35000
+    },
+    {
+      "id": "3",
+      "name": "Mì Ý Jolly Spaghetti",
+      "imgUrl": "../img/miy.png",
+      "price": 45000
+    },
+    {
+      "id": "4",
+      "name": "Cơm Gà Giòn Vui Vẻ",
+      "imgUrl": "../img/com.png",
+      "price": 48000
+    },
+    {
+      "id": "5",
+      "name": "Burger Tôm",
+      "imgUrl": "../img/burrer.png",
+      "price": 40000
+    },
+    {
+      "id": "6",
+      "name": "Sandwich Gà Giòn",
+      "imgUrl": "../img/sawit.png",
+      "price": 30000
+    },
+    {
+      "id": "7",
+      "name": "Khoai Tây Chiên",
+      "imgUrl": "../img/tay.png",
+      "price": 25000
+    },
+    {
+      "id": "8",
+      "name": "Súp Bí Đỏ",
+      "imgUrl": "../img/sup.png",
+      "price": 15000
+    },
+    {
+      "id": "9",
+      "name": "Bánh Pie Nhân Xoài Đào",
+      "imgUrl": "../img/pie.png",
+      "price": 15000
+    },
+    {
+      "id": "10",
+      "name": "Kem Sundae",
+      "imgUrl": "../img/kem.png",
+      "price": 15000
+    },
+    {
+      "id": "11",
+      "name": "Kem Sữa Tươi Ốc Quế",
+      "imgUrl": "../img/kemoc.png",
+      "price": 5000
+    },
+    {
+      "id": "12",
+      "name": "Nước Ngọt Pepsi / 7Up",
+      "imgUrl": "../img/7up.png",
+      "price": 15000
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

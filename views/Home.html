@@ -72,30 +72,32 @@
                 </div>
                 <div class="box">
                     <div class="container">
-                        <div class="row row-cols-lg-4 row-cols-2 row-cols-1 g-3 mt-3 tables">
-
-                            <div class="col">
-                                <div class="card zili">
-                                    <div class="box-img">
-                                        <img src="../img/resto2.jpg" alt="">
-                                    </div>
-                                    <h3>2</h3>
-                                    <div class="d-flex gap-4 justify-content-center align-items-center">
-                                        <button class="btn btn-success text-white d-flex align-items-center"><i
-                                                class="fa-solid fa-circle-plus"></i>
-                                            ADD</button>
-                                        <button class="btn btn-danger text-white d-flex align-items-center"><i
-                                                class="fa-solid fa-cart-shopping"></i>
-                                            CART</button>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
+                        <div class="row row-cols-lg-4 row-cols-2 row-cols-1 g-3 mt-3 tables"></div>
                     </div>
                 </div>
                 <div class="box">
                     <div class="container">
+                        <div class="row mt-3">
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="d-flex p-2 gap-4 justify-content-center align-items-center">
+                                        <i class="fa-solid fa-plate-wheat"></i>
+                                        <h5>Choose a table</h5>
+                                        <button class="px-4 text-light bg-success rounded-2"><i class="fa-solid fa-cart-shopping"></i> ODER</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 position-relative px-0">
+                                <input type="text" placeholder="Search" class="rounded-2 w-100 p-2 ">
+                                <button class="text-light bg-success rounded-2 p-2 position-absolute bottom-0 end-0">Submit Now</button>
+                            </div>
+                            <div class="col-2">
+                                <button class="d-flex w-100 h-100 align-items-center justify-content-center gap-3 p-1 rounded-2 bg-success text-light w-50">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <h4>Add Food</h4>
+                                </button>
+                            </div>
+                        </div>
                         <div class="row row-cols-lg-4 row-cols-2 row-cols-1 foods"></div>
                     </div>
                 </div>
@@ -104,6 +106,40 @@
             </section>
 
         </main>
+    </div>
+    <!-- Modal booking -->
+    <div class="modal fade" id="booking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title d-flex gap-2" id="exampleModalLabel">Modal Booking <p class="idbooking">1</p>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="d-flex gap-2 align-items-center mb-2">
+                            <i class="fa-solid fa-user text-primary"></i>
+                            <label class="fw-bold">CUSTOMER NAME</label>
+                        </div>
+                        <input type="text" class="w-100 p-2 rounded-2" placeholder="Enter your customer name"
+                            id="customername">
+                    </div>
+                    <div class="form-group mt-3">
+                        <div class="d-flex gap-2 align-items-center mb-1">
+                            <i class="fa-solid fa-users text-primary"></i>
+                            <label class="fw-bold">QUANTITY</label>
+                        </div>
+                        <input type="number" class="w-100 p-2 rounded-2" placeholder="Enter your quantity"
+                            id="quantity">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning" id="booking-table">Booking</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="../js/Home.js"></script>
     <script src="../js/api.js"></script>
