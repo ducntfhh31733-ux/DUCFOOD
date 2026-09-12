@@ -1,6 +1,6 @@
 const URL_TABLE = "http://localhost:3000/tables";
 const URL_FOOD = "http://localhost:3000/food";
-
+const URL_Thep = "http://localhost:3000/thep";
 async function getAll(url) {
     try {
         const response = await fetch(url);
@@ -32,4 +32,29 @@ async function edit(url, item) {
   } catch (error) {
     console.error('Lỗi khi cập nhật', error);
   }
+}
+function add(url, object) {
+  fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(object),
+  })
+    .then(response => response.json())
+    .then(data => {
+      // After successful creation, refresh the post list
+      fetchPosts();
+    })
+    .catch(error => console.error('Error creating post:', error));
+}
+
+function deleted(url, id) {
+  fetch(`${url}/${id}`, {
+    method: 'DELETE',
+  })
+    .then(response => response.json())
+    .then(data => {
+    })
+    .catch(error => console.error('Lỗi khi xóa Item này', error));
 }

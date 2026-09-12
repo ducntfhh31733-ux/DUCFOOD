@@ -20,8 +20,8 @@
     },
     {
       "id": "4",
-      "customerName": "hrrrll",
-      "quantity": "1000",
+      "customerName": "",
+      "quantity": "",
       "status": false
     },
     {
@@ -34,7 +34,7 @@
       "id": "6",
       "customerName": "",
       "quantity": "",
-      "status": true
+      "status": false
     },
     {
       "id": "7",
@@ -74,12 +74,6 @@
     }
   ],
   "food": [
-    {
-      "id": "1",
-      "name": "Gà Giòn Vui Vẻ",
-      "imgUrl": "../img/garan.webp",
-      "price": 33000
-    },
     {
       "id": "2",
       "name": "Gà Sốt Cay",
@@ -141,10 +135,33 @@
       "price": 5000
     },
     {
-      "id": "12",
-      "name": "Nước Ngọt Pepsi / 7Up",
-      "imgUrl": "../img/7up.png",
-      "price": 15000
+      "id": 1,
+      "name": "Gà rán vui vẻ",
+      "price": "30000",
+      "imgUrl": "https://res.cloudinary.com/fsehuhh0/image/upload/v1788872210/nlkzwrmfkuxl1pzyv3zl.webp"
+    }
+  ],
+  "thep": [
+    {
+      "id": "1",
+      "tableName": "Bàn số 1",
+      "description": "Spaghetti Bolognese x 2 = 240,000 VND Fried Rice x 1 = 80000 VND",
+      "totalPrice": "Tổng cộng: 320,000 VND",
+      "createdAt": "7/8/2025, 7:57:33 PM"
+    },
+    {
+      "id": "2",
+      "tableName": "Bàn số 1",
+      "description": "Spaghetti Bolognese x 2 = 240,000 VND Fried Rice x 1 = 80000 VND",
+      "totalPrice": "Tổng cộng: 320,000 VND",
+      "createdAt": "7/8/2025, 7:57:33 PM"
+    },
+    {
+      "id": "3",
+      "tableName": "Bàn số 1",
+      "description": "Spaghetti Bolognese x 2 = 240,000 VND Fried Rice x 1 = 80000 VND",
+      "totalPrice": "Tổng cộng: 320,000 VND",
+      "createdAt": "7/8/2025, 7:57:33 PM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

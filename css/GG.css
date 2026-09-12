@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hello{
+    height: 100vh;
+    background-image: url(https://noithatkendesign.vn/storage/app/media/uploaded-files/50-mau-thiet-ke-nha-hang-2025-134738.jpg);
+    background-size: 100% 100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    .duc{
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .row {
+        position: relative;
+        width: 60%;
+        .left{
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .right{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+}

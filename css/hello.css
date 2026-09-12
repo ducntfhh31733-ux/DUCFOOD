@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hello {
+    height: 100vh;
+    background-image: url(https://thietkehomexinh.com/wp-content/uploads/2017/03/nha-hang-ha-noi-01.jpg);
+    background-size: 100% 100%;
+    position: relative;
+
+    .login {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .right {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+.kl {
+    width: 60%;
+}
