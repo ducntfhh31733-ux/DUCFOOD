@@ -20,5 +20,7 @@ list_li.forEach((x, index) => {
 
 const index = localStorage.getItem("index");
 if(index){
+    console.log(list_box);
+    
      list_box[index].style.display = "block";
 }

@@ -51,29 +51,79 @@
                     <li><i class="fa-solid fa-bell"></i></li>
                     <li><i class="fa-solid fa-envelope"></i></li>
                 </ul>
-                <div class="user"><i class="fa-solid fa-user-secret"></i></div>
+                <div class="user">
+                    <i class="fa-solid fa-user-secret"></i>
+                    <div class="profile-card card d-none">
+                        <p class="p-2">opera@gmail.com</p>
+                        <p class="text-danger d-flex p-2 gap-2 align-items-center" id="logout"><i
+                                class="fa-solid fa-right-from-bracket"></i>Logout</p>
+                    </div>
+                </div>
             </header>
             <section class="pb-4">
                 <div class="box">
-                    <div class="container">
-                        <div class="row row-cols-lg-4 row-cols-2 row-cols-1">
-                            <div class="col">
-                                <div class="card">
-                                    <div class="bg-primary">
-                                        <img src="" alt="">
-                                        <h4></h4>
-                                        <p></p>
-                                        <button>
-
-                                        </button>
-                                    </div>
-                                    <div class="bg-black">
-                                        <h4></h4>
-                                        <hr>
-                                        <div class="">
-
-                                        </div>
-                                    </div>
+                    <div class="row row-cols-lg-4 row-cols-2 row-cols-1 d-f justify-content-center align-items-center">
+                        <div class="col pt-xxl-5 p-5">
+                            <div class="card p-4" style="border: 3px solid green; display:flex; justify-content: center; align-items: center;">
+                                <i class="fa-solid fa-chair" style="background-color: green; font-size: 30px; padding: 15px;border-radius: 20px; color: white;"></i>
+                                <p>Tổng số bàn</p>
+                                <h3>12</h3>
+                            </div>
+                        </div>
+                        <div class="col pt-xxl-5 p-5">
+                            <div class="card p-4" style="border: 3px solid blue; display:flex; justify-content: center; align-items: center;">
+                                <i class="fa-solid fa-utensils" style="background-color: blue; font-size: 30px; padding: 15px;border-radius: 20px; color: white;"></i>
+                                <p>Tổng số bàn</p>
+                                <h3>8</h3>
+                            </div>
+                        </div>
+                        <div class="col pt-xxl-5 p-5">
+                            <div class="card p-4" style="border: 3px solid rgb(149, 149, 83); display:flex; justify-content: center; align-items: center;">
+                                <i class="fa-regular fa-newspaper bg-warning" style="font-size: 30px; padding: 15px;border-radius: 20px; color: white;"></i>
+                                <p>Tổng số bàn</p>
+                                <h3>3</h3>
+                            </div>
+                        </div>
+                         <div class="col pt-xxl-5 p-5">
+                            <div class="card p-4" style="border: 3px solid red; display:flex; justify-content: center; align-items: center;">
+                                <i class="fa-solid fa-coins" style="background-color: red; font-size: 30px; padding: 15px;border-radius: 20px; color: white;"></i>
+                                <p>Tổng số bàn</p>
+                                <h3>0 VND</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-lg-4 row-cols-2 row-cols-1 d-f justify-content-center align-items-center">
+                        <div class="col p-5">
+                            <div class="card p-3 d-flex justify-content-center align-items-center">
+                                <div class="d-flex gap-2 flex-column justify-content-center align-items-center">
+                                    <h5>Tổng doanh thu</h5>
+                                    <h4>2,390K</h4>
+                                </div>
+                                <p>VND</p>
+                            </div>
+                        </div>
+                         <div class="col p-5">
+                            <div class="card p-3 d-flex justify-content-center align-items-center">
+                                <div class="d-flex gap-2 flex-column justify-content-center align-items-center">
+                                    <h5>Số đơn hàng</h5>
+                                    <h4>7</h4>
+                                </div>
+                                <p>đơn</p>
+                            </div>
+                        </div>
+                         <div class="col p-5">
+                            <div class="card p-3 d-flex justify-content-center align-items-center">
+                                <div class="d-flex gap-2 flex-column justify-content-center align-items-center">
+                                    <h5>Món ăn phổ biến</h5>
+                                    <h4>Fried Rice</h4>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col p-5">
+                            <div class="card p-3 d-flex justify-content-center align-items-center">
+                                <div class="d-flex gap-2 flex-column justify-content-center align-items-center">
+                                    <h5 class="text-center">Khách hàng thường xuyên</h5>
+                                    <h4>Tom_nguyen</h4>
                                 </div>
                             </div>
                         </div>
@@ -91,8 +141,11 @@
                                 <div class="card">
                                     <div class="d-flex p-2 gap-4 justify-content-center align-items-center">
                                         <i class="fa-solid fa-plate-wheat"></i>
-                                        <h5>Choose a table</h5>
-                                        <button class="px-4 text-light bg-success rounded-2"><i
+                                        <select class="select_choose">
+                                            <option value="" selected>Choose a table</option>
+                                        </select>
+
+                                        <button class="px-4 text-light bg-success rounded-2 oder"><i
                                                 class="fa-solid fa-cart-shopping"></i> ODER</button>
                                     </div>
                                 </div>
@@ -104,7 +157,7 @@
                                     Now</button>
                             </div>
                             <div class="col-2">
-                                <button data-bs-toggle="modal" data-bs-target="#addfood"
+                                <button data-bs-toggle="modal" data-bs-target="#addfood" id="addg"
                                     class="d-flex w-100 h-100 align-items-center justify-content-center gap-3 p-1 rounded-2 bg-success text-light w-50">
                                     <i class="fa-solid fa-circle-plus"></i>
                                     <h4>Add Food</h4>
@@ -122,11 +175,53 @@
                         </div>
                     </div>
                 </div>
-    </div>
-    <div class="box">info</div>
-    </section>
+                <div class="box ">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="row row-cols-lg-2 row-cols-2 row-cols-2 d-flex hello">
+                            <div class="col profile_left">
+                                <div class="bg-danger">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <h3>john_doe</h3>
+                                <p>Member</p>
 
-    </main>
+                                <button><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            </div>
+                            <div class="col text-bg-dark">
+                                <h5>Information</h5>
+                                <hr>
+                                <div class="d-flex gap-5">
+                                    <div class="">
+                                        <h5>Email</h5>
+                                        <p>john.doe@example.com</p>
+                                    </div>
+                                    <div class="">
+                                        <h5>Phone</h5>
+                                        <p>0123456789</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h5>Address</h5>
+                                    <p>123 Main Street, New York</p>
+                                </div>
+                                <div class="">
+                                    <h5>Birth</h5>
+                                    <p>1990-01-15</p>
+                                </div>
+                                <hr>
+                                <h5>Follow me</h5>
+                                <div class="d-flex gap-3 p-lg-3">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                    <i class="fa-brands fa-square-twitter"></i>
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
     </div>
     <!-- Modal booking -->
     <div class="modal fade" id="booking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -167,8 +262,9 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header bg-success">
-                    <h5 class="modal-title d-flex gap-2" id="exampleModalLabel">Modal Add Food<p class="idaddfood">1</p>
+                    <h5 class="modal-title d-flex gap-2" id="title-food">Modal Add Food
                     </h5>
+                    <p class="idaddfood ms-2" id="iddfood">1</p>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -216,6 +312,43 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-danger ros">DELETE FOOD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal home food-->
+    <div class="modal fade" id="cardfood" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success">
+                    <h5 class="modal-title d-flex gap-2" id="title-food">Modal Card food
+                    </h5>
+                    <p class="ghfood ms-2">1</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="d-flex gap-2 align-items-center mb-2">
+                            <label class="fw-bold">Bàn 1</label>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tên nhóm</th>
+                                    <th scope="col">Giá</th>
+                                    <th scope="col">Số lượng</th>
+                                    <th scope="col">Tổng</th>
+                                </tr>
+                            </thead>
+                            <tbody id="listcard">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-5 w-25" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-success rounded-5">Xác nhận Thanh toán</button>
                 </div>
             </div>
         </div>

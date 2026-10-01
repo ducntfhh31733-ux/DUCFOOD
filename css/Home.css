@@ -10,6 +10,7 @@ li {
 
 .box {
     display: none;
+    height: 100%;
 }
 
 p,
@@ -36,7 +37,8 @@ img {
     height: 100%;
 }
 
-.idbooking {
+.idbooking,
+.idaddfood {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -171,6 +173,20 @@ img {
                 background-color: black;
                 border-radius: 50%;
                 color: white;
+                position: relative;
+
+                .profile-card {
+                    position: absolute;
+                    right: 50%;
+                    transform: translateY(70%);
+
+                    p {
+                        &:hover {
+                            background-color: black;
+                            color: aliceblue;
+                        }
+                    }
+                }
             }
         }
 
@@ -241,6 +257,56 @@ img {
 .k {
     position: absolute;
     left: 700px;
+}
+
+
+
+
+.hello {
+    width: 1000px;
+    font-size: 20px;
+    .profile_left {
+        background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        .bg-danger {
+            padding: 10px;
+            border-radius: 100px;
+            width: 40px;
+            height: 40px;
+
+            .fa-user {
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        button {
+            background-color: aqua;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 3px solid black;
+        }
+    }
+
+    .text-bg-dark {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 59px;
+        padding: 20px;
+    }
 }
 
 @media screen and (min-width: 990px) {
