@@ -48,6 +48,7 @@ btn_booking.addEventListener("click", () => {
     }
     edit(URL_TABLE, update);
 })
+ let total = 0;
 async function getIdcard(id) {
     const c = document.querySelector(".ghfood");
     c.innerText = id;
@@ -55,7 +56,7 @@ async function getIdcard(id) {
     const allfood = await getAll(URL_FOOD);
     const order = allorder.find(p => p.id == id);
     const listcard = document.getElementById("listcard");
-    let total = 0;
+     total = 0;
      listcard.innerHTML = "";
     order.bill.forEach((p, index) => {
         const food = allfood.find(x => x.id == p.idFood);
@@ -68,7 +69,8 @@ async function getIdcard(id) {
                                 </tr>`
     });
     listcard.innerHTML += `<tr>
-                                    <th class="text-end" colspan="4">Tổng tiền giá:${total} VND</th>
+                                          <th colspan="2">Tổng tiền giá:</th>
+                                    <th class="text-end" colspan="2">${total} VND</th>
                                 </tr>`;
 }
 function getIdfood(id) {
@@ -77,3 +79,25 @@ function getIdfood(id) {
       list_box[2].style.display = "block";
       select.value = id;
 }
+const nut = document.getElementById("nut");
+nut.addEventListener("click", async () => {
+    const a = document.querySelector(".ghfood");
+    const allder = await getAll(URL_ORDER);
+    const uptable = {
+        id : a.innerText,
+        customerName : "",
+        quantity : "",
+        status : true
+    };
+    edit(URL_TABLE, uptable);
+    deleted(URL_ORDER, a.innerText);
+    const order = allder.find(d => d.id == a.innerText);
+    const pay = {
+        idTable : a.innerText,
+        bill : order.bill ,
+        total : total,
+        creatAt : new Date()
+    }
+    add(URL_PAY, pay)
+    
+})

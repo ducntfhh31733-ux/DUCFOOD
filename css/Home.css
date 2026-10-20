@@ -11,6 +11,7 @@ li {
 .box {
     display: none;
     height: 100%;
+    background: #f2f4f7;
 }
 
 p,
@@ -179,6 +180,11 @@ img {
                     position: absolute;
                     right: 50%;
                     transform: translateY(70%);
+                    top: calc(100% + 10px);
+                    right: 0;
+                    transform: none;
+                    z-index: 1000;
+                    min-width: 220px;
 
                     p {
                         &:hover {
@@ -265,6 +271,7 @@ img {
 .hello {
     width: 1000px;
     font-size: 20px;
+
     .profile_left {
         background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
         border-top-left-radius: 50px;

@@ -60,84 +60,63 @@
                     </div>
                 </div>
             </header>
-            <section class="pb-4">
+            <section class="">
                 <div class="box">
-                    <div class="row row-cols-lg-4 row-cols-2 row-cols-1 d-f justify-content-center align-items-center">
-                        <div class="col pt-xxl-5 p-5">
-                            <div class="card p-4" style="border: 3px solid green; display:flex; justify-content: center; align-items: center;">
-                                <i class="fa-solid fa-chair" style="background-color: green; font-size: 30px; padding: 15px;border-radius: 20px; color: white;"></i>
-                                <p>Tổng số bàn</p>
-                                <h3>12</h3>
-                            </div>
-                        </div>
-                        <div class="col pt-xxl-5 p-5">
+                    <div  class="row  m-4 row-cols-lg-4 row-cols-2 row-cols-1 d-f justify-content-center align-items-center">
+                        <div class="col">
                             <div class="card p-4" style="border: 3px solid blue; display:flex; justify-content: center; align-items: center;">
                                 <i class="fa-solid fa-utensils" style="background-color: blue; font-size: 30px; padding: 15px;border-radius: 20px; color: white;"></i>
-                                <p>Tổng số bàn</p>
-                                <h3>8</h3>
+                                <p>số lượng món ăn của quán</p>
+                                <h3 id="xanh">8</h3>
                             </div>
                         </div>
-                        <div class="col pt-xxl-5 p-5">
+                        <div class="col">
+                            <div class="card p-4" style="border: 3px solid green; display:flex; justify-content: center; align-items: center;">
+                                <i class="fa-solid fa-chair" style="background-color: green; font-size: 30px; padding: 15px;border-radius: 20px; color: white;"></i>
+                                <p>Bàn sẵn sàng tiếp khách</p>
+                                <h3 id="duong">12</h3>
+                            </div>
+                        </div>
+                        <div class="col">
                             <div class="card p-4" style="border: 3px solid rgb(149, 149, 83); display:flex; justify-content: center; align-items: center;">
                                 <i class="fa-regular fa-newspaper bg-warning" style="font-size: 30px; padding: 15px;border-radius: 20px; color: white;"></i>
-                                <p>Tổng số bàn</p>
-                                <h3>3</h3>
+                                <p>Đơn chưa Thanh toán</p>
+                                <h3 id="vang">3</h3>
                             </div>
                         </div>
-                         <div class="col pt-xxl-5 p-5">
+                         <div class="col">
                             <div class="card p-4" style="border: 3px solid red; display:flex; justify-content: center; align-items: center;">
                                 <i class="fa-solid fa-coins" style="background-color: red; font-size: 30px; padding: 15px;border-radius: 20px; color: white;"></i>
-                                <p>Tổng số bàn</p>
-                                <h3>0 VND</h3>
+                                <p>Doanh thu hôm nay</p>
+                                <h3 id="doo">0 VND</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="row row-cols-lg-4 row-cols-2 row-cols-1 d-f justify-content-center align-items-center">
-                        <div class="col p-5">
-                            <div class="card p-3 d-flex justify-content-center align-items-center">
-                                <div class="d-flex gap-2 flex-column justify-content-center align-items-center">
-                                    <h5>Tổng doanh thu</h5>
-                                    <h4>2,390K</h4>
-                                </div>
-                                <p>VND</p>
-                            </div>
+                    <div class="row m-4 row-cols-lg-3 row-cols-2 row-cols-1 d-f justify-content-center align-items-center">
+                      <div class="col" id="red">
+                       
+                      </div>
+                      <div class="col" id="blue">
+                        <div class="card bg-primary" style="padding: 60px">
+
                         </div>
-                         <div class="col p-5">
-                            <div class="card p-3 d-flex justify-content-center align-items-center">
-                                <div class="d-flex gap-2 flex-column justify-content-center align-items-center">
-                                    <h5>Số đơn hàng</h5>
-                                    <h4>7</h4>
-                                </div>
-                                <p>đơn</p>
-                            </div>
+                      </div>
+                      <div class="col" id="green">
+                        <div class="card bg-success" style="padding: 60px">
+
                         </div>
-                         <div class="col p-5">
-                            <div class="card p-3 d-flex justify-content-center align-items-center">
-                                <div class="d-flex gap-2 flex-column justify-content-center align-items-center">
-                                    <h5>Món ăn phổ biến</h5>
-                                    <h4>Fried Rice</h4>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col p-5">
-                            <div class="card p-3 d-flex justify-content-center align-items-center">
-                                <div class="d-flex gap-2 flex-column justify-content-center align-items-center">
-                                    <h5 class="text-center">Khách hàng thường xuyên</h5>
-                                    <h4>Tom_nguyen</h4>
-                                </div>
-                            </div>
-                        </div>
+                      </div>
                     </div>
                 </div>
                 <div class="box">
-                    <div class="container">
-                        <div class="row row-cols-lg-4 row-cols-2 row-cols-1 g-3 mt-3 tables"></div>
+                    <div class="container pt-3">
+                        <div class="row row-cols-lg-4 row-cols-2 row-cols-1 g-3 tables"></div>
                     </div>
                 </div>
                 <div class="box">
-                    <div class="container">
-                        <div class="row mt-5">
-                            <div class="col-4">
+                    <div class="container pt-3">
+                        <div class="row g-3">
+                            <div class="col-lg-4 col-12">
                                 <div class="card">
                                     <div class="d-flex p-2 gap-4 justify-content-center align-items-center">
                                         <i class="fa-solid fa-plate-wheat"></i>
@@ -150,13 +129,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 position-relative px-0">
-                                <input type="text" placeholder="Search" class="rounded-2 w-100 p-2 ">
+                            <div class="col-lg-6 col-12 position-relative px-0">
+                                <input type="text" placeholder="Search" class="rounded-2 w-100 p-2 " id="input">
                                 <button
-                                    class="text-light bg-success rounded-2 p-2 position-absolute bottom-0 end-0">Submit
+                                    class="text-light bg-success rounded-2 p-2 position-absolute bottom-0 end-0" id="button">Submit
                                     Now</button>
                             </div>
-                            <div class="col-2">
+                            <div class="col-lg-2 col-12">
                                 <button data-bs-toggle="modal" data-bs-target="#addfood" id="addg"
                                     class="d-flex w-100 h-100 align-items-center justify-content-center gap-3 p-1 rounded-2 bg-success text-light w-50">
                                     <i class="fa-solid fa-circle-plus"></i>
@@ -170,10 +149,8 @@
                     </div>
                 </div>
                 <div class="box">
-                    <div class="container">
-                        <div class="row row-cols-lg-4 row-cols-2 row-cols-1 thep">
-                        </div>
-                    </div>
+                        <div class="row row-cols-lg-3 row-cols-2 row-cols-1 p-3 pay">
+                        </div>    
                 </div>
                 <div class="box ">
                     <div class="d-flex justify-content-center align-items-center h-100">
@@ -182,7 +159,7 @@
                                 <div class="bg-danger">
                                     <i class="fa-solid fa-user"></i>
                                 </div>
-                                <h3>john_doe</h3>
+                                <h3 id="nameio">john_doe</h3>
                                 <p>Member</p>
 
                                 <button><i class="fa-solid fa-pen-to-square"></i>Edit</button>
@@ -193,7 +170,7 @@
                                 <div class="d-flex gap-5">
                                     <div class="">
                                         <h5>Email</h5>
-                                        <p>john.doe@example.com</p>
+                                        <p id="namemail">john.doe@example.com</p>
                                     </div>
                                     <div class="">
                                         <h5>Phone</h5>
@@ -348,7 +325,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary rounded-5 w-25" data-bs-dismiss="modal">Đóng</button>
-                    <button type="button" class="btn btn-success rounded-5">Xác nhận Thanh toán</button>
+                    <button type="button" class="btn btn-success rounded-5" id="nut">Xác nhận Thanh toán</button>
                 </div>
             </div>
         </div>
@@ -356,9 +333,11 @@
     <script src="../js/Home.js"></script>
     <script src="../js/api.js"></script>
     <script src="../js/cloudinaryConfig.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/getTable.js"></script>
     <script src="../js/getfood.js"></script>
     <script src="../js/g.js"></script>
+    <script src="../js/chart.js"></script>
     <!-- Bootstrap JavaScript Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

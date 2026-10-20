@@ -1,7 +1,9 @@
-async function showfood() {
+async function showfood(search) {
     const data = await getAll(URL_FOOD);
     const hello = document.querySelector(".foods");
-    data.sort((a, b) => a.id - b.id).forEach(p => {
+    hello.innerHTML = "";
+    const datasearch = data.filter(c => c.name.toLowerCase().includes(search.toLowerCase()));
+    datasearch.sort((a, b) => a.id - b.id).forEach(p => {
         const item = document.createElement("div");
           item.classList.add("col");
         item.innerHTML = `<div class="card adf">
@@ -42,7 +44,12 @@ async function showfood() {
     })
 
 }
-showfood();
+const input = document.getElementById("input");
+const submit = document.getElementById("button");
+submit.addEventListener("click", () => {
+    showfood(input.value);
+})
+showfood("");
 const file = document.getElementById("filefood");
 file.addEventListener("change", handleFoodImageSelect)
 let selectedFoodImageFile; // toan cuc

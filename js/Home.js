@@ -14,13 +14,19 @@ list_li.forEach((x, index) => {
     x.addEventListener("click", () => {
         list_box.forEach(p => p.style.display = "none")
         list_box[index].style.display = "block";
-        localStorage.setItem("index",index);
+        localStorage.setItem("index", index);
     })
 });
 
 const index = localStorage.getItem("index");
-if(index){
+if (index) {
     console.log(list_box);
-    
-     list_box[index].style.display = "block";
+
+    list_box[index].style.display = "block";
 }
+const namemail = document.getElementById("namemail");
+const nameio = document.getElementById("nameio");
+console.log(namemail);
+const acc = JSON.parse(localStorage.getItem("acc"));
+namemail.innerText = acc.email;
+nameio.innerText = acc.name;
